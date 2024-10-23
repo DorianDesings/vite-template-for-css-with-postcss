@@ -1,12 +1,16 @@
 import { defineConfig } from 'vite';
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-import { ViteMinifyPlugin } from 'vite-plugin-minify';
+
+// GITHUB
+const finalFolder = '../docs';
+
+// STANDARD
+// const finalFolder = '../dist';
 
 export default defineConfig({
-  plugins: [ViteMinifyPlugin({}), ViteImageOptimizer({})],
   base: '',
   root: 'src',
   build: {
-    outDir: '../docs'
+    outDir: finalFolder,
+    emptyOutDir: true
   }
 });

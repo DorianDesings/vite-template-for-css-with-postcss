@@ -1,0 +1,11 @@
+body {
+  background-color: #333;
+  background-image: url(../assets/images/test.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.example {
+  display: flex;
+  user-select: none;
+}
